@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DeviceActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_lap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edt">
+
+            <Button
+                android:id="@+id/btn_add_lap"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edt"
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/edt_search_lap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/btn_search_lap"
+                android:layout_toEndOf="@+id/btn_add_lap"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_search_lap"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/ic_baseline_search_24" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_price_lap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/group_price_lap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_price_all_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_1_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 - 10.000.000 VNĐ" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_2_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10.000.000 - 20.000.000 VNĐ" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_3_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">= 20.000.000 VNĐ" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_RAM_lap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ram"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/group_ram_lap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_ram_all_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_4_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4GB" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_8_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8GB" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_16_lap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16GB" />
+
+            </RadioGroup>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_lap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edt">
+            <Button
+                android:id="@+id/btn_add_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edt"
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/edt_search_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/btn_search_phone"
+                android:layout_toEndOf="@+id/btn_add_phone"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_search_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/ic_baseline_search_24" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_price_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/group_price_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_price_all_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_1_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 - 5.000.000 VNĐ" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_2_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.000.000 - 10.000.000 VNĐ" />
+
+                <RadioButton
+                    android:id="@+id/radio_price_3_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">= 10.000.000 VNĐ" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/text_RAM_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ram"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/group_ram_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_ram_all_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_3_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3GB" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_4_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4GB" />
+
+                <RadioButton
+                    android:id="@+id/radio_ram_8_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8GB" />
+
+            </RadioGroup>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_pk"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_add_pk"
+            android:layout_width="328dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/custom_edt"
+            android:text="Thêm sản phảm" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_pk"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

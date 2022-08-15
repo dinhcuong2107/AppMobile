@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "574867987648",
+    "project_id": "kos-computer",
+    "storage_bucket": "kos-computer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574867987648:android:5af8f66ab106d7c04d6125",
+        "android_client_info": {
+          "package_name": "com.example.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574867987648-knq8ilmso93poe0105rqeus92uq807u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHSe-mOdhdL40cWIxDzJft9PfBzR8Aolw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574867987648-knq8ilmso93poe0105rqeus92uq807u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
